@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,600&display=swap');
+
+:root {
+  --primary-color: #01cd74;
+  --secondary-color: #ff4e00;
+  --text-color: #4d4f53;
+  --left-vh: 15vh;
+  --right-vh: calc(100vh - var(--left-vh));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_logo {
+  position: relative;
+  background-image: url(images/WTNaga_HMMM_B42.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: var(--left-vh);
+}
+.container_logo .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.logoHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: auto;
+  margin: 10px 10px;
+}
+
+.logoHolder img {
+  width: 100%;
+  height: 100%;
+}
+
+.container_logo .courtesyPhoto {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+form {
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px 0;
+  width: 80vw;
+  padding: 10px;
+}
+.form h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.container_form {
+  height: var(--right-vh);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.container_form .text-label {
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px 0;
+  width: 80vw;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.text-label p:last-child {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+
+.form-group input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid var(--text-color);
+  padding: 0 10px;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.form-group button {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid var(--text-color);
+  padding: 0 10px;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.form-group button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  border: 1px solid white;
+}
+
+.form-group p {
+  margin-top: 10px;
+  color: var(--text-color);
+  font-size: 1rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.form-group p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.form-group p a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .container_logo {
+    height: 100vh;
+    width: 40vw;
+    justify-content: flex-start;
+  }
+
+  .container_logo .logo {
+    margin-top: 15rem;
+    width: 40vw;
+  }
+
+  .container_form {
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .container_form .text-label {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: space-between;
+    max-width: 900px;
+    flex-wrap: wrap;
+    gap: 0 20px;
+  }
+
+  .form-group label {
+    font-size: 1.2rem;
+  }
+  .form-group input {
+    width: 400px;
+    height: 40px;
+  }
+
+  .form-group button {
+    margin-top: 30px;
+    height: 60px;
+    width: 400px;
+  }
+
+  .form-group p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .container_form .text-label{
+   font-size: 2rem;
+   max-width: 900px;
+  }
+}
