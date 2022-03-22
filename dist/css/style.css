@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+:root {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20vh;
+  background-image: url(../images/WTNaga_HMMM_B42.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container aside .brand-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 62px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.56);
+  color: #ffffff;
+  gap: 12px;
+}
+
+.container aside .brand-logo .logo-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  height: 80%;
+}
+
+.container aside .brand-logo .logo-holder img {
+  width: 100%;
+  height: 100%;
+}
+
+.container aside .brand-logo h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.container aside cite {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.56);
+}
+
+.container aside cite p {
+  font-size: 12px;
+  text-align: end;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.container aside cite p a {
+  color: #ffffff;
+}
+
+.container main {
+  height: 80vh;
+  background-color: #10594f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container main header {
+  position: relative;
+}
+
+.container main header .header-content {
+  height: 150px;
+  background-color: #fe4540;
+  border: 1px solid #fee822;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 16px;
+}
+
+.container main header .header-content p {
+  margin: 10px;
+  color: #fee822;
+  font-weight: 500;
+}
+
+.container main header .form {
+  position: inherit;
+  top: -5%;
+  margin: 0 auto;
+  width: 80vw;
+  max-width: 500px;
+  min-height: 500px;
+  background-color: #039642;
+  border: 1px solid #fee822;
+}
+
+.container footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.56);
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+}
+
+.container footer a {
+  color: #ffffff;
+}
+
+.container footer a:hover {
+  color: #fee822;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,600&display=swap');
+
+$font-family: 'Poppins', sans-serif;
+$font-weight: (
+  'Thin': 100,
+  'ExtraLight': 200,
+  'Light': 300,
+  'Regular': 400,
+  'Medium': 500,
+  'SemiBold': 600,
+  'ExtraBold': 800,
+);
+
+$colors: (
+  'white': #ffffff,
+  'light-green': #039642,
+  'dark-green': #10594f,
+  'yellow': #fee822,
+  'red': #fe4540,
+  'gray': #b1a1a1,
+  'dark-gray': rgba(0, 0, 0, 0.56),
+);

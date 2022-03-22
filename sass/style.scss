@@ -1,0 +1,55 @@
+@import 'reset';
+@import 'variables';
+
+///aside
+:root {
+  font-family: $font-family;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @import 'aside';
+
+  main {
+    height: 80vh;
+    background-color: map-get($colors, 'dark-green');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    header {
+      position: relative;
+      .header-content {
+        height: 150px;
+        background-color: map-get($colors, 'red');
+        border: 1px solid map-get($colors, 'yellow');
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 16px;
+
+        p {
+          margin: 10px;
+          color: map-get($colors, 'yellow');
+          font-weight: map-get($font-weight, 'Medium');
+        }
+      }
+      .form {
+        position: inherit;
+        top: -5%;
+        margin: 0 auto;
+        width: 80vw;
+        max-width: 500px;
+        min-height: 500px;
+        background-color: map-get($colors, 'light-green');
+        border: 1px solid map-get($colors, 'yellow');
+
+        @import 'form';
+      }
+    }
+  }
+
+  @import 'footer';
+}

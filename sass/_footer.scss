@@ -1,0 +1,16 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  background-color: map-get($colors, 'dark-gray');
+  color: map-get($colors, 'white');
+  text-align: center;
+  font-size: 12px;
+  a {
+    color: map-get($colors, 'white');
+
+    &:hover {
+      color: map-get($colors, 'yellow');
+    }
+  }
+}
