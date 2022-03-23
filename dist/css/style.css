@@ -8,6 +8,7 @@
 
 :root {
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 
 .container {
@@ -141,17 +142,168 @@
   margin: 10px;
   color: #fee822;
   font-weight: 500;
+  font-size: 12px;
 }
 
 .container main header .form {
   position: inherit;
-  top: -5%;
+  top: -10%;
   margin: 0 auto;
-  width: 80vw;
+  width: 90vw;
   max-width: 500px;
-  min-height: 500px;
+  height: 62vh;
+  min-height: 400px;
   background-color: #039642;
   border: 1px solid #fee822;
+}
+
+.container main header .form h2 {
+  color: #ffffff;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.container main header .form form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 90%;
+}
+
+.container main header .form form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.container main header .form form .form-group label {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 5px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.container main header .form form .form-group input {
+  width: calc(100% - 12px);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  height: 10px;
+  max-height: 16px;
+  border-radius: 5px;
+  border: none;
+  padding: 6px;
+}
+
+.container main header .form form .form-group input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.56);
+}
+
+.container main header .form form .form-group input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.56);
+}
+
+.container main header .form form .form-group input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.56);
+}
+
+.container main header .form form .form-group input::placeholder {
+  color: rgba(0, 0, 0, 0.56);
+}
+
+.container main header .form form .form-group input:invalid {
+  border: 1px solid red;
+}
+
+.container main header .form form .form-group .error {
+  font-size: 0.5rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #fee822;
+  margin-bottom: 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.container main header .form form .form-group:last-child {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.container main header .form form .form-group:last-child button {
+  width: 50%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.7rem;
+  margin: auto;
+  font-weight: 800;
+  color: #fee822;
+  background-color: #fe4540;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.container main header .form form .form-group:last-child button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container main header .form form .form-group:last-child p {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 500;
+  margin: 0 5px;
+  padding: 10px;
+}
+
+.container main header .form form .form-group:last-child p a {
+  color: #ffffff;
+  font-weight: 600;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.container main header .form form .form-group:last-child p a:hover {
+  color: #fee822;
 }
 
 .container footer {
@@ -160,7 +312,7 @@
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.56);
   color: #ffffff;
-  text-align: center;
+  text-align: right;
   font-size: 12px;
 }
 

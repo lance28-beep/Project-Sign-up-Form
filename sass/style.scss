@@ -4,6 +4,7 @@
 ///aside
 :root {
   font-family: $font-family;
+  overflow: hidden;
 }
 
 .container {
@@ -34,17 +35,25 @@
           margin: 10px;
           color: map-get($colors, 'yellow');
           font-weight: map-get($font-weight, 'Medium');
+          font-size: 12px;
         }
       }
       .form {
         position: inherit;
-        top: -5%;
+        top: -10%;
         margin: 0 auto;
-        width: 80vw;
+        width: 90vw;
         max-width: 500px;
-        min-height: 500px;
+        height: 62vh;
+        min-height: 400px;
         background-color: map-get($colors, 'light-green');
         border: 1px solid map-get($colors, 'yellow');
+
+        h2 {
+          color: map-get($colors, 'white');
+          margin: 10px;
+          font-size: 16px;
+        }
 
         @import 'form';
       }
