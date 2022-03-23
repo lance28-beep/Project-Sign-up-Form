@@ -39,10 +39,6 @@ form {
       // padding: 2px;
     }
 
-    input:invalid {
-      border: 1px solid red;
-    }
-
     .error {
       font-size: 0.5rem;
       text-transform: capitalize;
@@ -51,6 +47,11 @@ form {
       margin-bottom: 5px;
       align-self: flex-end;
     }
+
+    .undisplay-error {
+      display: none;
+    }
+    
   }
   .form-group:last-child {
     margin-bottom: 0;
@@ -91,6 +92,21 @@ form {
         &:hover {
           color: map-get($colors, 'yellow');
         }
+      }
+    }
+  }
+}
+
+form .validate {
+  .form-group {
+    input {
+      &:invalid {
+        border: none;
+        outline: map-get($colors, 'red');
+      }
+      &:valid {
+        border: none;
+        border-color: map-get($colors, 'dark-green');
       }
     }
   }

@@ -92,7 +92,7 @@
 }
 
 .container aside cite p {
-  font-size: 12px;
+  font-size: 10px;
   text-align: end;
   font-weight: 100;
   color: #ffffff;
@@ -238,10 +238,6 @@
   color: rgba(0, 0, 0, 0.56);
 }
 
-.container main header .form form .form-group input:invalid {
-  border: 1px solid red;
-}
-
 .container main header .form form .form-group .error {
   font-size: 0.5rem;
   text-transform: capitalize;
@@ -250,6 +246,10 @@
   margin-bottom: 5px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.container main header .form form .form-group .undisplay-error {
+  display: none;
 }
 
 .container main header .form form .form-group:last-child {
@@ -306,6 +306,16 @@
   color: #fee822;
 }
 
+.container main header .form form .validate .form-group input:invalid {
+  border: none;
+  outline: #fe4540;
+}
+
+.container main header .form form .validate .form-group input:valid {
+  border: none;
+  border-color: #10594f;
+}
+
 .container footer {
   position: absolute;
   bottom: 0;
@@ -313,7 +323,7 @@
   background-color: rgba(0, 0, 0, 0.56);
   color: #ffffff;
   text-align: right;
-  font-size: 12px;
+  font-size: 8px;
 }
 
 .container footer a {
