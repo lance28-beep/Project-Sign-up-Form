@@ -34,6 +34,10 @@ form {
       padding: 6px;
     }
 
+    input.border-error {
+      border: 2px solid map-get($colors, 'red');
+    }
+
     input::placeholder {
       color: map-get($colors, 'dark-gray');
       // padding: 2px;
@@ -51,7 +55,6 @@ form {
     .undisplay-error {
       display: none;
     }
-    
   }
   .form-group:last-child {
     margin-bottom: 0;
